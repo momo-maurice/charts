@@ -149,9 +149,6 @@ spec:
         emptyDir: {}
       - name: {{ include "common.names.fullname" . }}-journal
         emptyDir: {}
-      - name: cgroups
-        hostPath:
-          path: /sys/fs/cgroup
   {{- if not .Values.persistence.enabled }}
       - name: data
         emptyDir: {}
