@@ -3,7 +3,7 @@ entries:
   freeipa:
   - apiVersion: v2
     appVersion: 4.9.10
-    created: "2023-01-21T10:25:17.960369107+01:00"
+    created: "2023-01-21T11:34:08.726571883+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -19,6 +19,6 @@ entries:
     name: freeipa
     type: application
     urls:
-    - https://github.com/momo-maurice/charts/freeipa-0.3.0.tgz
+    - https://momo-maurice.github.io/charts/freeipa-0.3.0.tgz
     version: 0.3.0
-generated: "2023-01-21T10:25:17.958681824+01:00"
+generated: "2023-01-21T11:34:08.724623463+01:00"
