@@ -2,7 +2,7 @@ apiVersion: v2
 name: freeipa
 description: FreeIPA is an integrated security information management solution combining Linux (Fedora), 389 Directory Server, MIT Kerberos, NTP, DNS, Dogtag (Certificate System).
 maintainers:
-  - name: improwised
+  - name: momo-maurice
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
