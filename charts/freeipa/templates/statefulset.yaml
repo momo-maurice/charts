@@ -141,9 +141,6 @@ spec:
           mountPath: "/tmp"
         - name: {{ include "common.names.fullname" . }}-journal
           mountPath: "/var/log/journal"
-        - name: cgroups
-          mountPath: /sys/fs/cgroup
-          readOnly: true
 
       volumes:
       - name: {{ include "common.names.fullname" . }}-run
