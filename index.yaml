@@ -1,0 +1,24 @@
+apiVersion: v1
+entries:
+  freeipa:
+  - apiVersion: v2
+    appVersion: 4.9.10
+    created: "2023-01-21T10:25:17.960369107+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: FreeIPA is an integrated security information management solution
+      combining Linux (Fedora), 389 Directory Server, MIT Kerberos, NTP, DNS, Dogtag
+      (Certificate System).
+    digest: 3aa9e29fe2b4da8bf7d637457b8b95d0e5204ec956a99571bd04370d08a0e89f
+    maintainers:
+    - name: improwised
+    name: freeipa
+    type: application
+    urls:
+    - https://github.com/momo-maurice/charts/freeipa-0.3.0.tgz
+    version: 0.3.0
+generated: "2023-01-21T10:25:17.958681824+01:00"
