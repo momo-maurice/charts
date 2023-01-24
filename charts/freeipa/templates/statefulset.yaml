@@ -46,18 +46,18 @@ spec:
         command: {{- include "common.tplvalues.render" (dict "value" .Values.command "context" $) | nindent 12 }}
         {{- end }}
         args:
-        - -U
-        - --realm={{ default "localhost.com" .Values.args.realm }}
-        - --domain={{ default "localhost" .Values.args.domain }}
-        - --ds-password={{ default "freeipa" .Values.args.dspassword }}
-        - --admin-password={{ default "freeipa" .Values.args.adminpassword }}
-        - --unattended
-        {{- if .Values.args.nohostdns }}
-        - --no-host-dns
-        {{- end }}
-        {{- if .Values.args.nontp }}
-        - --no-ntp
-        {{- end }}
+        #- -U
+        #- --realm={{ default "localhost.com" .Values.args.realm }}
+        #- --domain={{ default "localhost" .Values.args.domain }}
+        #- --ds-password={{ default "freeipa" .Values.args.dspassword }}
+        #- --admin-password={{ default "freeipa" .Values.args.adminpassword }}
+        #- --unattended
+        #{{- if .Values.args.nohostdns }}
+        #- --no-host-dns
+        #{{- end }}
+        #{{- if .Values.args.nontp }}
+        #- --no-ntp
+        #{{- end }}
         {{- if .Values.args.setupdns }}
         - --setup-dns
         {{- end }}
