@@ -141,6 +141,9 @@ spec:
           mountPath: "/tmp"
         - name: {{ include "common.names.fullname" . }}-journal
           mountPath: "/var/log/journal"
+        - name: cgroups
+          mountPath: /sys/fs/cgroup
+          readOnly: true
 
       volumes:
       - name: {{ include "common.names.fullname" . }}-run
@@ -149,6 +152,10 @@ spec:
         emptyDir: {}
       - name: {{ include "common.names.fullname" . }}-journal
         emptyDir: {}
+      - name: cgroups
+        hostPath:
+          path: /sys/fs/cgroup
+
   {{- if not .Values.persistence.enabled }}
       - name: data
         emptyDir: {}
