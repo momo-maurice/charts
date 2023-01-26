@@ -3,7 +3,27 @@ entries:
   freeipa:
   - apiVersion: v2
     appVersion: 4.10.1
-    created: "2023-01-26T19:51:53.226932623+01:00"
+    created: "2023-01-26T21:06:24.45726509+01:00"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: FreeIPA is an integrated security information management solution
+      combining Linux (Fedora), 389 Directory Server, MIT Kerberos, NTP, DNS, Dogtag
+      (Certificate System).
+    digest: 2a65dedb021ec729dcc959d53afe8542c4e7ae7b73a43d3f265c662664c08e85
+    maintainers:
+    - name: momo-maurice
+    name: freeipa
+    type: application
+    urls:
+    - https://momo-maurice.github.io/charts/freeipa-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
+    appVersion: 4.10.1
+    created: "2023-01-26T21:06:24.45399759+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -23,7 +43,7 @@ entries:
     version: 0.3.4
   - apiVersion: v2
     appVersion: 4.10.1
-    created: "2023-01-26T19:51:53.225391478+01:00"
+    created: "2023-01-26T21:06:24.452474088+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -43,7 +63,7 @@ entries:
     version: 0.3.3
   - apiVersion: v2
     appVersion: 4.10.1
-    created: "2023-01-26T19:51:53.22341146+01:00"
+    created: "2023-01-26T21:06:24.450811661+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -63,7 +83,7 @@ entries:
     version: 0.3.2
   - apiVersion: v2
     appVersion: 4.10.1
-    created: "2023-01-26T19:51:53.221325336+01:00"
+    created: "2023-01-26T21:06:24.449286695+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -83,7 +103,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: 4.9.10
-    created: "2023-01-26T19:51:53.218546278+01:00"
+    created: "2023-01-26T21:06:24.447144355+01:00"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -101,4 +121,4 @@ entries:
     urls:
     - https://momo-maurice.github.io/charts/freeipa-0.3.0.tgz
     version: 0.3.0
-generated: "2023-01-26T19:51:53.209823327+01:00"
+generated: "2023-01-26T21:06:24.445443888+01:00"

@@ -144,6 +144,9 @@ spec:
         - name: cgroups
           mountPath: /sys/fs/cgroup
           readOnly: true
+        - name: dbus
+          mountPath: /var/run/dbus
+          readOnly: true
 
       volumes:
       - name: {{ include "common.names.fullname" . }}-run
@@ -155,6 +158,9 @@ spec:
       - name: cgroups
         hostPath:
           path: /sys/fs/cgroup
+      - name: dbus
+        hostPath:
+          path: /var/run/dbus
 
   {{- if not .Values.persistence.enabled }}
       - name: data
